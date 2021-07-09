@@ -1,0 +1,23 @@
+﻿<Window x:Class="Database.TableCreation"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Database"
+        mc:Ignorable="d"
+        Title="TableCreation" Height="600" Width="800">
+    <Grid>
+        <Label x:Name="tableNameLabel" Content="Nom de la table" HorizontalAlignment="Left" Height="45" Margin="46,18,0,0" VerticalAlignment="Top" Width="142" FontSize="14" FontFamily="Tahoma"/>
+        <TextBox x:Name="tableNameBox" HorizontalAlignment="Left" Height="45" Margin="292,18,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="187" FontSize="14" FontFamily="Tahoma"/>
+        <Button x:Name="validerBtn" Content="Valider" HorizontalAlignment="Left" Height="52" Margin="320,507,0,0" VerticalAlignment="Top" Width="180" FontSize="14" FontFamily="Tahoma" Click="validerBtn_Click"/>
+        <Button x:Name="addColonneBtn" Content="Ajout Colonne" HorizontalAlignment="Left" Height="52" Margin="562,79,0,0" VerticalAlignment="Top" Width="180" Click="addColonneBtn_Click"/>
+        <Label x:Name="champLabel" Content="Champ" HorizontalAlignment="Left" Height="52" Margin="46,79,0,0" VerticalAlignment="Top" Width="104" FontSize="14" FontFamily="Tahoma"/>
+        <Label x:Name="typeLabel" Content="Type" HorizontalAlignment="Left" Height="43" Margin="46,138,0,0" VerticalAlignment="Top" Width="80" RenderTransformOrigin="0.489,-0.157" FontSize="14" FontFamily="Tahoma"/>
+        <TextBox x:Name="champTxt" HorizontalAlignment="Left" Height="32" Margin="173,79,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="141" FontSize="14" FontFamily="Tahoma"/>
+        <ComboBox x:Name="comboBoxType" HorizontalAlignment="Left" Margin="173,138,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="comboBox_SelectionChanged" Height="35"/>
+        <Label x:Name="keylabel" Content="Cle Primaire" HorizontalAlignment="Left" Height="33" Margin="46,203,0,0" VerticalAlignment="Top" Width="104" FontSize="14" FontFamily="Tahoma"/>
+        <ComboBox x:Name="comboBoxKey" HorizontalAlignment="Left" Height="35" Margin="173,203,0,0" VerticalAlignment="Top" Width="120"/>
+        <DataGrid x:Name="dataGrid" HorizontalAlignment="Left" Margin="72,271,0,0" VerticalAlignment="Top" Height="231" Width="659"/>
+
+    </Grid>
+</Window>
